@@ -1,0 +1,44 @@
+#header {
+    font-size: 0.8em; /* Размер текста */
+    background: #ffffff; /* Цвет фона шапки */
+    color: #000000; /* Цвет текста */
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #ffffff; /* Цвет фона подвала */
+    text-align: center;/* Выравнивание по центру */
+    color: #A9A9A9; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+    clear: left; /* Отменяем действие float */
+}
+.center{
+    align-items: center;
+    vertical-align: 300px;
+    padding: 280px 350px;
+}
+.big{
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.little{
+    width: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#input{
+    border-radius: 5px;
+    border-color: #ffbc00;
+    border-width: 5px;
+
+    width: 550px;
+    height: 28px;
+}
+#submit{
+    border-radius: 5px;
+background-color: #ffbc00;
+    border-color: #ffbc00;
+    width: 60px;
+    height: 33px;
+}

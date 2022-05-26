@@ -1,4 +1,5 @@
-body{
+body {
+
 
     display: flex;
     background: #000000; /* Цвет фона подвала */
@@ -6,28 +7,61 @@ body{
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
-    align-items:flex-start;
-    justify-content:  center;
+    align-items: flex-start;
+    justify-content: center;
 }
-a{
-    text-decoration : none;
+
+a {
+    text-decoration: none;
     color: #ffffff;
     margin-bottom: 25px;
-
 }
 
-
-div{
-
-    margin: 15px;
+div {
+    margin-bottom: 15px;
 }
 
-.header{
+.header {
     font-size: 12px;
     font-weight: 600;
     color: darkgray;
 }
 
-a:hover{
+.a1 {
+    margin-bottom: 30px;
+}
+
+.a2{
+    margin-left: 20px;
+}
+
+a:hover {
     color: darkgray;
 }
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+    padding-top: 5px;
+}
+
+ul {
+    margin-top: 0px;
+    padding-left: 0; /* Сдвигаем список влево */
+}
+
+@media (max-width: 1024px) {
+    body {
+        background: #000000; /* Цвет фона подвала */
+        font-family: "Proxima Nova", Arial, "Helvetica Neue", sans-serif;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+

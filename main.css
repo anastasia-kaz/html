@@ -22,6 +22,7 @@ div {
 }
 
 .header {
+    margin-left: 10px;
     font-size: 12px;
     font-weight: 600;
     color: darkgray;
@@ -42,10 +43,12 @@ a:hover {
 li {
     list-style-type: none; /* Убираем маркеры */
     padding-top: 5px;
+
 }
 
 ul {
     margin-top: 0px;
+    margin: 10px;
     padding-left: 0; /* Сдвигаем список влево */
 }
 

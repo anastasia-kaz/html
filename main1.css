@@ -1,0 +1,127 @@
+a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+
+
+.header-f {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.a1 {
+    margin-bottom: 30px;
+}
+
+.a2{
+    margin-left: 20px;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+    padding-top: 5px;
+
+}
+
+ul {
+    margin-top: 0px;
+    margin: 10px;
+    padding-left: 0; /* Сдвигаем список влево */
+}
+
+.footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    width: 100%;
+    display: flex;
+    background: #000000; /* Цвет фона подвала */
+    font-family: "Proxima Nova", Arial, "Helvetica Neue", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    body{
+        background: #dfdee1;
+    }
+    .footer{
+        background: #000000; /* Цвет фона подвала */
+        font-family: "Proxima Nova", Arial, "Helvetica Neue", sans-serif;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        position: relative;
+        min-height: 100%;
+        /*position: fixed; !* Фиксированное положение *!*/
+        left: -10px; bottom: -10px;
+
+    }
+
+    .header{
+        background: #dfdee1; /* Цвет фона подвала */
+        font-family: "Proxima Nova", Arial, "Helvetica Neue", sans-serif;
+        color: #000000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        position: relative;
+        min-height: 0%;
+    }
+
+    .news-title{
+        font-family: "PF Regal", "PF Regal Text Pro", Georgia, serif;
+        font-size: 14px;
+        color: #000000;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+    }
+    .news{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        border: #b3b2b5;
+        border-radius: 10px;
+        background: white;
+    }
+    .picture{
+        overflow: hidden;
+    }
+    .date{
+        font-family: "PF Regal", "PF Regal Text Pro", Georgia, serif;
+        font-size: 10px;
+        color: darkgrey;
+        position: sticky;
+        left: 10%;
+        top: 330px;
+
+    }
+    .img{
+        position: sticky;
+        left: 92%;
+        top: 325px;
+    }
+}
+

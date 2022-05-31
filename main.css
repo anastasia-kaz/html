@@ -1,6 +1,11 @@
+
+
+
+
 .flex{
     display: flex;
-    height: 60%;
+    height: 80%;
+    background: linear-gradient(90deg, #bc7fc9, #8b71d9);
 
 }
 
@@ -10,55 +15,165 @@
     width: 100%;
 }
 
-
-body {
-    height: 1000px;
+pre{
     margin: 0;
+    font-size: 18px;
+}
+body {
+    height: 1500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 header{
     background: url("lowpoly.png");
-    height: 30%;
+    height: 20%;
     background-size: cover;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 h1{
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 50px;
     text-align: left;
+    margin-right: 100px;
 }
-nav{
-    display: block;
-    background: goldenrod;
-    height: 5%;
+h2{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
 
 }
+
 aside{
-    background: #bc7fc9;
-    width: 30%;
+    /*background: #bc7fc9;*/
+    width: 50%;
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-
+    flex-direction: column;
+    justify-content: space-around;
 }
 main{
-    background: blue;
+    /*background: #bc7fc9;*/
     display: flex;
     flex-direction: row;
     align-items: stretch;
     flex: 100%;
     width:100%;
-    height: 60%;
+    height: 70%;
 }
 footer{
-    background: chartreuse;
-    height: 10%;
-}
+    background: url("lowpoly.png");
+    background-size: cover;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
 
 .foto{
     border-color: black;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 305px;
     z-index: 1;
+    background-image: url("photo_2021-10-01_11-47-11.jpg");
+    background-size: 100%;
+    background-position: top 0;
+    border-bottom-right-radius: 50%;
+    box-shadow: 5px 5px 25px 3px #481b63 ;
+
+}
+ul{
+    font-size: 18px;
+    margin: 5px;
+}
+
+.border{
+    /*border: 3px solid black;*/
+    padding: 5px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px 3px #481b63 ;
+}
+.skill{
+    display: flex;
+    justify-content: space-around
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+p{
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+}
+.footer_image1{
+    width: 200px;
+    height: 135px;
+
+    background-size: 45%;
+    background-image: url("iconmonstr-github-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+.footer_image2{
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    background-size: 70%;
+    background-image: url("rs_school.svg");
+    background-repeat: no-repeat;
+}
+aside ul{
+    padding-bottom: 20px;
+}
+.contact, .contact a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+
+}
+
+A:visited {
+    color: black; /* Цвет посещенных ссылок */
+}
+.tel{
+    background: url("free-icon-font-phone-call-5070407.svg") no-repeat 0 4px;
+    background-size: 17px;
+    padding-left: 24px;
+}
+.mail{
+    background: url("free-icon-font-envelope-3916611.svg") no-repeat 0 4px;
+    background-size: 17px;
+    padding-left: 24px;
+}
+.telega{
+    background: url("free-icon-font-telegram-6422206.svg") no-repeat 0 4px;
+    background-size: 17px;
+    padding-left: 24px;
+}
+.linked{
+    background: url("free-icon-font-linkedin-6422202.svg") no-repeat 0 4px;
+    background-size: 17px;
+    padding-left: 24px;
+}
+.github{
+    background: url("free-icon-font-github-6424084.svg") no-repeat 0 4px;
+    background-size: 17px;
+    padding-left: 24px;
+}
+.location{
+    background: url("free-icon-font-marker-3916862.svg") no-repeat 0 4px;
+    background-size: 17px;
+    padding-left: 24px;
 }

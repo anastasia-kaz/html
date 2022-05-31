@@ -10,22 +10,126 @@
 <body>
 
 <header>
-    <div class="foto">
-фото
-    </div>
+    <div class="foto"></div>
     <div>
         <h1>Anastasia<br>
             Kazachonok</h1>
     </div>
 </header>
 <div class="flex">
-    <aside>aside</aside>
+    <aside>
+        <div class="border"><h2>Contact</h2>
+            <ul class="contact">
+                <a href="tel:375447259141"> <li class="tel">+375 (44) 725 91 41</li></a>
+                <a href="mail:anastasia-kaz@mail.ru"><li class="mail">anastasia-kaz@mail.ru</li></a>
+                <a href="tg:anastasia-kaz>"><li class="telega">Telegram</li></a>
+                <a href="https://www.linkedin.com/in/anastasia-kaz" target="_blank"><li class="linked">LinkedIn</li></a>
+                <a href="https://github.com/anastasia-kaz" target="_blank"><li class="github">GitHub</li></a>
+                <li class="location">Minsk, Belarus</li>
+            </ul>
+        </div>
+        <div class="border"><h2>Education</h2>
+            <ul>
+                <li>Belarusian State Academy of Communications <br>
+                    Specialty: postal engineer
+                </li>
+                <li>Minsk State College of Services<br>
+                    Specialty: postal communication technician
+                </li>
+
+            </ul>
+        </div>
+        <div class="border"><h2>Courses</h2>
+            <ul>
+                <li>V.Ksenzov's author's course on software testing <br>
+                    Specialty: quality assurance engineer
+                </li>
+                <li>Сourse on test automation "automation for everyone"<br>
+                    Specialty: automation quality assurance engineer
+                </li>
+
+            </ul>
+        </div>
+        <div class="border">
+            <h2>Work experience:</h2>
+            <p>I have experience writing automated tests for the API in postman using JS. there is also experience
+                in testing various web projects.</p>
+        </div>
+        <div class="border"><h2>Languages</h2>
+            <ul>
+                <li>Russian - native speaker</li>
+                <li>English - A2 (improving to B1)</li>
+
+            </ul>
+        </div>
+    </aside>
     <div class="flex1">
-        <nav>nav</nav>
-        <main>main</main>
+        <main>
+            <div class="border">
+                <h2>About Myself:</h2>
+                <p>
+                    I am 21 years old, at the moment I work as a software testing engineer and study frontend.I like to
+                    learn, develop
+                    and get better every day. I also continue to study English in order to travel and expand my horizons
+                </p>
+            </div>
+            <div class="skill border">
+                <div><h2>Personal qualities:</h2>
+                    <ul>
+                        <li>Dependable</li>
+                        <li>Team player</li>
+                        <li>Learning agility</li>
+                        <li>Quality-oriented</li>
+                        <li>Attentive</li>
+                        <li>Сommunicative</li>
+
+                    </ul>
+                </div>
+                <div><h2>Special skills:</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript Basics</li>
+                        <li>Git, GitHub</li>
+                        <li>VS Code, IntelliJ IDEA</li>
+                        <li>Figma (for web development)</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="border"><h2>Code Examples:</h2>
+                <pre><code>
+        let jsonData = pm.response.json();
+        for (let i=0; i&lt;jsonData.length; i++){
+             const req={
+             url: 'http://162.55.220.72:5005/curr_byn',
+             method: 'POST',
+             header: {
+                  'Content-Type': 'multipart/form-data',
+             },
+             body: {
+             mode:'formdata',
+             formdata:[
+                  {key: "auth_token", value:  pm.environment.get("token")},
+                  {key: "curr_code", value:  pm.response.json()[i].Cur_ID}
+             ]},
+             };
+        pm.sendRequest (req, function (err, res) {
+        if (res.code === 500) {return;}
+        else if (res.code === 200 && res.json().Cur_OfficialRate != undefined) {
+        console.log(res.json());
+        }});
+        };</code>
+                    </pre>
+            </div>
+
+        </main>
     </div>
 </div>
-<footer>footer</footer>
-
+<footer>
+<a href="https://github.com/anastasia-kaz"> <div class="footer_image1"> </div></a>
+<div>2022</div>
+<a href="https://rs.school"><div class="footer_image2"> </div></a>
+</footer>
 </body>
 </html>
